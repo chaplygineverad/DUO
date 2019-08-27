@@ -1,0 +1,30 @@
+.header {
+  padding-top: 70px;
+  &__navigation {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    background-color: #ffb400;
+  }
+  &__nav-item {
+    width: 100%;
+    max-width: 700px;
+    &.-first {
+      max-width: 143px;
+    }
+  }
+  &__nav-link {
+
+  }
+  &__link-image {
+    width: 50px;
+    height: 50px;
+  }
+  &__link {
+      font-weight: 400;
+      text-decoration: none;
+      border-bottom: 1px dotted #342c24;
+  }
+}
