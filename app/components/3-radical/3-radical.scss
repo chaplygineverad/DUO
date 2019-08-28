@@ -1,5 +1,58 @@
 .radical {
+    background: #FFF9EF;
+    padding-top: 68px;
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
     &__btn {
         font-size: 28px;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        font-size: 22px;
+        width: 430px;
+    }
+
+    &__item {
+        padding-left: 100px;
+        background: url(../img/radical-check.png)no-repeat left top 0;
+        &:not(:first-child) {
+            margin-top: 20px;
+        }
+    }
+
+    &__item-title {
+        font-weight: 700;
+    }
+
+    &__descr {
+        margin-top: 8px;
+        line-height: 1.3;
+    }
+
+    &__img-box {
+        font-size: 0;
+        margin: -30px 0 -30px;
+    }
+
+    &__pack-name {
+        color: #ffb400;
+        font-size: 38px;
+        font-weight: 700;
+    }
+
+    &__text {
+        font-size: 32px;
+        color: #342c24;
+    }
+
+    &__btn {
+        padding: 10px 20px;
+        width: 370px;
     }
 }

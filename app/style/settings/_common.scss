@@ -83,6 +83,8 @@ svg {
 	color: #000;
 	cursor: pointer;
 	border-radius: 5px;
+	display: block;
+	width: 270px;
 	&:hover {
 		background: linear-gradient(to bottom, #85d725, #bbe938);
 	}
