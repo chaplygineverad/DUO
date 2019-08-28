@@ -74,3 +74,16 @@ svg {
 	color: #ffb400;
 	font-weight: 700;
 }
+
+.btn {
+	border: 1px solid #80ba4a;
+	background: linear-gradient(to bottom, #bbe938, #85d725);
+	font-size: 36px;
+	font-weight: 700;
+	color: #000;
+	cursor: pointer;
+	border-radius: 5px;
+	&:hover {
+		background: linear-gradient(to bottom, #85d725, #bbe938);
+	}
+}
