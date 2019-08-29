@@ -5,6 +5,7 @@
     .container {
         display: flex;
         flex-wrap: wrap;
+        align-items: flex-start;
     }
 
     &__btn {
@@ -21,8 +22,12 @@
     &__item {
         padding-left: 100px;
         background: url(../img/radical-check.png)no-repeat left top 0;
+        letter-spacing: -.04em;
         &:not(:first-child) {
-            margin-top: 20px;
+            margin-top: 33px;
+        }
+        &:last-child {
+            padding-bottom: 2px;
         }
     }
 
@@ -37,7 +42,7 @@
 
     &__img-box {
         font-size: 0;
-        margin: -30px 0 -30px;
+        margin: -106px 0 -49px;
     }
 
     &__pack-name {
@@ -52,7 +57,20 @@
     }
 
     &__btn {
-        padding: 10px 20px;
+        padding: 15px 20px;
         width: 370px;
+        text-align: center;
+        margin-top: 50px;
+    }
+    
+    &__func {
+        width: 399px;
+        padding-left: 30px;
+        letter-spacing: -.11em;
+    }
+
+    &__text {
+        margin-top: 12px;
+        line-height: 1.25;
     }
 }
