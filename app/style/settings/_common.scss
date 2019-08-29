@@ -6,7 +6,9 @@ body {
 	overflow-x: hidden;
 	color: #342c24;
 }
-
+html{
+	overflow-x: hidden;
+}
 img {
 	max-width: 100%;
 }
@@ -19,7 +21,7 @@ svg {
 	width: 1220px;
 	margin: 0 auto;
 	padding: 0 25px;
-	@include r(1209) {
+	@include r(1219) {
 		width: 1024px;
 	}
 	@include r(1023) {
@@ -38,15 +40,18 @@ svg {
 }
 
 .title {	
+	color: #342c24;
+	font-family: "PT Sans";
 	font-size: 60px;
 	font-weight: 700;
 	line-height: 1;
-	@include r(1209){
+	@include r(1219){
 		font-size: 42px;
 	}
 	@include r(1023){	
 		font-size: 36px;
 		line-height: 1.1;
+		text-align: center;
 	}
 	@include r(767){	
 		font-size: 32px;
@@ -58,6 +63,8 @@ svg {
 		font-size: 26px;
 	}
 }
+
+$textFont: "PT Sans";
 
 .text-bold, b {
 	font-weight: 700;
