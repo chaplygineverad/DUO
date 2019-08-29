@@ -80,27 +80,11 @@
 				background-color: #fff9ef
 				background-image: radial-gradient(circle closest-corner at 50% 50%, #ffb400 13%, transparent 25%)
 		&__icon
-			position: relative
-			width: 60px
-			height: 60px
-			border: 8px solid #ffdd8b
-			background-color: #ff9c00
-			box-sizing: border-box
-			border-radius: 50%
-			flex-shrink: 0
 			margin-right: 40px
 			+r(1219)
 				margin-right: 20px
 			+r(1023)
 				margin-right: 15px
-				width: 44px
-				height: 44px
-				border: 6px solid #ffdd8b
-			img
-				position: absolute
-				top: 50%
-				left: 50%
-				transform: translate(-33%, -60%)
 	&-bottom
 		padding: 99px 0 86px
 		position: relative
@@ -141,6 +125,8 @@
 			width: 5px
 			height: 96%
 			background-color: #ffb400
+			+r(639)
+				width: 3px
 		+r(1219)
 			margin-top: 30px
 			padding-left: 20px
