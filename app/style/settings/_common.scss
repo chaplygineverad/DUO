@@ -50,7 +50,6 @@ svg {
 	}
 	@include r(1023){	
 		font-size: 36px;
-		line-height: 1.1;
 		text-align: center;
 	}
 	@include r(767){	

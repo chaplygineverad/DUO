@@ -573,6 +573,21 @@
 
         &__right {
             display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-direction: column;
+        }
+
+        &__free {
+            padding-left: 0;
+        }
+
+        &__main {
+            margin: 0;
+
+            &::before {
+                display: none;
+            }
         }
     }
 }
