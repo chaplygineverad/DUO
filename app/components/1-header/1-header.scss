@@ -3,12 +3,15 @@
     width: 100%;
     min-height: 70px;
     background-color: #ffb400;
+    margin: 0 auto;
   }
   &__navigation {
     display: flex;
     width: 100%;
-    max-width: 1220px;
+    max-width: 1170px;
+    transform: translateX(-50%);
     top: 0;
+    left: 50%;
     justify-content: space-between;
     align-items: center;
     position: fixed;
@@ -53,5 +56,189 @@
     &.-call {
       margin-left: 8px;
     }
+  }
+  /*______end static-navigation_____*/
+  &__background {
+    background: linear-gradient(90deg, #fbf7f3 57.3%, #f7ebdf 42.7%);
+  }
+  &__title {
+    max-width: 751px;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 1;
+  }
+  &__items {
+    display: flex;
+    width: 100%;
+    padding-left: 80px;
+  }
+  &__item-box {
+    &.-preferences {
+      max-width: 270px;;
+      margin-top: 42px;
+    }
+  }
+  &__preference {
+    display: block;
+    position: relative;
+    margin-bottom: 35px;
+    color: #000000;
+    font-size: 22px;
+    line-height: 28px;
+    font-weight: 400;
+    &:before {
+      display: block;
+      position: absolute;
+      content: "";
+      left: -80px;
+      width: 48px;
+      height: 48px;
+      box-shadow: 0 3px 13px rgba(229, 216, 203, 0.55);
+      border: 1px solid #d4d2d1;
+      border-radius: 50%;
+      background-color: #ffffff;
+      background-size: contain;
+    }
+    &.-fight:before {
+      background: url("./../img/header-icon4.svg") center no-repeat;
+    }
+    &.-no-pain:before {
+      background: url("./../img/header-icon5.svg") center no-repeat;
+    }
+    &.-mobility:before {
+      background: url("./../img/header-icon6.png") center no-repeat;
+    }
+  }
+  //product-box
+  &__prod-box {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 554px;
+    &:before {
+      display: block;
+      position: absolute;
+      z-index: -1;
+      content: "";
+      width: 217px;
+      height: 186px;
+      bottom: 4px;
+      left: -115px;
+      background: url("./../img/pack-after-list.png") no-repeat;
+    }
+    &:after {
+      display: block;
+      position: absolute;
+      z-index: 3;
+      content: "";
+      width: 288px;
+      height: 141px;
+      bottom: -47px;
+      left: -170px;
+      background: url("./../img/product-capsule.png") no-repeat;
+    }
+  }
+}
+.order-form {
+  display: block;
+  width: 100%;
+  max-width: 271px;
+  &__title {
+    color: #342c24;
+    font-size: 37px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: -2.6px;
+  }
+  &__price-row {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__price-block {
+    display: block;
+    max-width: 150px;
+  }
+  &__price-box {
+    color: #342c24;
+
+    &.-old {
+      .x_price_previous {
+        font-size: 34px;
+        font-weight: 400;
+      }
+      .x_currency {
+        font-size: 16px;
+        font-weight: 400;
+      }
+    }
+    &.-new {
+      .x_price_current {
+        font-size: 54px;
+        font-weight: 700;
+      }
+      .x_currency {
+        font-size: 18px;
+        font-weight: 700;
+      }
+    }
+  }
+  &__sale {
+    width: 118px;
+    height: 118px;
+    color: #ffffff;
+    font-size: 45px;
+    font-weight: 700;
+    background-color: #ff4800;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 116px;
+    transform: rotate(-24deg);
+    span {
+      font-size: 31px;
+      margin-left: -11px;
+    }
+  }
+  &__timer-title {
+    padding-top: 26px;
+    border-top: 1px solid #342c24;
+    color: #342c24;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: -0.6px;
+    span {
+      color: #ff4800;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+  }
+  &__timer-box {
+    display: flex;
+    justify-content: space-between;
+    font-family: "digital-7-mono", sans-serif;
+    font-size: 36px;
+    div {
+      width: 70px;
+      height: 56px;
+      border-radius: 4px;
+      border: 1px solid #efe2d5;
+      background: url("./../img/timer-bg.png") center no-repeat,#FFFFFF;
+      padding-left: 9px;
+      letter-spacing: 3px;
+      font-size: 52px;
+      line-height: 54px;
+    }
+  }
+  &__body-form {
+
+  }
+  &__input-box {
+    border-radius: 4px;
+    border: 1px solid #efe2d5;
+    background-color: #ffffff;
+    color: #7c7c7c;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1;
   }
 }
