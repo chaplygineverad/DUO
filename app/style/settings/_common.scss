@@ -92,6 +92,7 @@ $textFont: "PT Sans";
 	border-radius: 5px;
 	display: block;
 	width: 270px;
+	font-family: $textFont;
 	&:hover {
 		background: linear-gradient(to bottom, #85d725, #bbe938);
 	}

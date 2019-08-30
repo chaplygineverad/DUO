@@ -1,0 +1,490 @@
+.product
+	padding: 90px 0 75px
+	background: linear-gradient(180deg, rgba(255,249,239,1) 0%, #fff 50%)
+	+r(1219)
+		padding: 60px 0
+	.container
+		+r(1023)
+			text-align: center
+	.title
+		+r(1023)
+			display: inline
+	.subtitle
+		color: #342c24
+		font-family: $textFont
+		font-size: 44px
+		font-weight: 700
+		line-height: 1
+		margin-top: 3px
+		+r(1219)
+			font-size: 28px
+		+r(1023)
+			font-size: 36px
+			display: inline
+			text-align: center
+			width: 100%
+		+r(767)
+			font-size: 32px
+		+r(639)
+			font-size: 29px
+			margin-top: 0
+		+r(479)
+			font-size: 26px
+	&__content
+		display: flex
+		margin-top: 56px
+		+r(1219)
+			margin-top: 40px
+		+r(1023)
+			text-align: left
+			margin-top: 30px
+		+r(767)
+			margin-top: 25px
+		+r(639)
+			flex-direction: column
+			align-items: center
+			margin-top: 20px
+		+r(479)
+			margin-top: 15px
+	&__pack
+		flex-shrink: 0
+		position: relative
+		margin-left: -18px
+		position: relative
+		height: 100%
+		+r(1219)
+			max-width: 430px
+		+r(1023)
+			margin-left: 0
+		+r(767)
+			max-width: 360px
+		&:before
+			content: ''
+			position: absolute
+			bottom: -50px
+			left: 50%
+			transform: translateX(-61%)
+			width: 288px
+			height: 141px
+			background: url(../img/product-capsule.png) no-repeat center
+			+r(1219)
+				background-size: contain
+				width: 250px
+				height: 125px
+			+r(767)
+				bottom: -65px
+			+r(639)
+				display: none
+	&__text
+		margin-left: 35px
+		margin-top: 30px
+		+r(1219)
+			margin-left: 15px
+			margin-top: 10px
+		+r(767)
+			margin-top: 0
+			margin-left: 0
+		+r(639)
+			br
+				display: none
+	&__list
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		+r(479)
+			max-width: 350px
+			margin-right: auto
+			margin-left: auto
+	&__item
+		display: flex
+		width: auto
+		margin: 20px 0 20px 0px
+		+r(1219)
+			margin: 15px 0
+		+r(1023)
+			margin: 5px 0
+		+r(639)
+			width: 48%
+			align-items: center
+			flex-direction: column
+			margin: 7px 0
+		+r(479)
+			flex-direction: row
+			width: 100%
+	&-item
+		&--width
+			max-width: 305px
+			+r(1219)
+				max-width: 280px
+			+r(479)
+				max-width: 100%
+		&--width2
+			max-width: 266px
+			width: 100%
+			+r(1219)
+				max-width: 241px
+			+r(639)
+				width: 48%
+				max-width: 100%
+			+r(479)
+				width: 100%
+				max-width: 100%
+		&__icon
+			margin-right: 25px
+			+r(1219)
+				margin-right: 10px
+			+r(639)
+				margin-right: 0
+			+r(479)
+				margin-right: 10px
+		&__text
+			color: #342c24
+			font-family: $textFont
+			font-size: 22px
+			font-weight: 400
+			line-height: 28px
+			height: auto
+			+r(1219)
+				font-size: 20px
+				line-height: 26px
+			+r(1023)
+				font-size: 18px
+				line-height: normal
+			+r(767)
+				font-size: 17px
+			+r(639)
+				text-align: center
+				margin-top: 4px
+				br
+					display: none
+			+r(479)
+				text-align: left
+				margin-top: 0
+	&__btn
+		text-align: center
+		padding: 16px 0
+		margin-top: 46px
+		max-width: 270px
+		width: 100%
+		+r(1219)
+			margin-top: 30px
+		+r(1023)
+			margin-top: 15px
+			padding: 10px 0
+		+r(639)
+			margin-right: auto
+			margin-left: auto
+			margin-top: 10px
+	
+.composition
+	padding: 75px 0 100px
+	+r(1219)
+		padding: 60px 0
+	&__subtitle
+		color: #342c24
+		font-family: $textFont
+		font-size: 24px
+		font-weight: 400
+		line-height: 32px
+		margin-top: 15px
+		+r(1219)
+			font-size: 22px
+			line-height: 28px
+			margin-top: 10px
+		+r(1023)
+			font-size: 20px
+			line-height: normal
+			margin-top: 7px
+			text-align: center
+			br
+				display: none
+		+r(1023)
+			font-size: 18px
+			margin-top: 4px
+		&--color
+			color: #ff5100
+			font-weight: 700
+			text-decoration: underline
+	&__capsule
+		display: flex
+		justify-content: center
+		position: relative
+		max-width: 775px
+		margin: 80px auto 0
+		left: -5px
+		+r(1219)
+			margin-top: 60px
+			max-width: 700px
+		+r(1023)
+			max-width: 550px
+			margin-top: 40px
+		+r(767)
+			max-width: 450px
+			margin-top: 20px
+		+r(639)
+			display: none
+	&__ingredient
+		position: absolute
+		top: -21px
+		width: 170px
+		height: 170px
+		border-radius: 50%
+		display: flex
+		justify-content: center
+		align-items: center
+		color: #ffffff
+		font-size: 24px
+		font-weight: 700
+		line-height: 1
+		z-index: 0
+		font-family: $textFont
+		+r(1219)
+			font-size: 23px
+		+r(1023)
+			width: 140px
+			height: 140px
+			font-size: 21px
+		+r(767)
+			font-size: 19px
+			width: 110px
+			height: 110px
+			top: 0
+		span
+			position: absolute
+			bottom: -10px
+			font-size: 59px
+			font-weight: 700
+			line-height: 1
+			+r(1219)
+				font-size: 50px
+				bottom: -7px
+			+r(1023)
+				font-size: 42px
+			+r(767)
+				font-size: 36px
+			pr
+				font-size: 41px
+				+r(1219)
+					font-size: 32px
+				+r(1023)
+					font-size: 26px
+				+r(767)
+					font-size: 22px
+		&--left
+			left: -105px
+			background-color: #ffb400
+			color: #000000
+			+r(1023)
+				left: -50px
+			span
+				left: -30px
+				+r(1219)
+					left: -25px
+				+r(1023)
+					left: -10px
+				+r(767)
+					left: 0px
+			&:before
+				content: ''
+				position: absolute
+				top: 11px
+				left: -45px
+				width: 95px
+				height: 139px
+				background: url(../img/circle-img--left.png) no-repeat center
+				background-size: contain
+				z-index: -1
+				+r(767)
+					display: none
+			&:after
+				content: ''
+				position: absolute
+				bottom: -32px
+				right: -222px
+				height: 1px
+				background-color: #342c24
+				width: 245px
+				transform: rotate(30deg)
+				+r(1023)
+					bottom: -19px
+					right: -163px
+					width: 179px
+				+r(767)
+					bottom: -11px
+					right: -135px
+					width: 143px
+		&--right
+			right: -105px
+			background-color: #342c24
+			color: #fff
+			+r(1023)
+				right: -50px
+			span
+				right: -30px
+				color: #ffb400
+				+r(1219)
+					right: -25px
+				+r(1023)
+					right: 0px
+				+r(767)
+					right: 10px
+			&:before
+				content: ''
+				position: absolute
+				top: -9px
+				right: -26px
+				width: 54px
+				height: 66px
+				background: url(../img/circle-img--rigth.png) no-repeat center
+				background-size: contain
+				z-index: -1
+				+r(767)
+					display: none
+			&:after
+				content: ''
+				position: absolute
+				bottom: -49px
+				left: -243px
+				height: 1px
+				background-color: #342c24
+				width: 274px
+				transform: rotate(-32deg)
+				+r(1023)
+					bottom: -33px
+					left: -146px
+					width: 172px
+				+r(767)
+					bottom: -25px
+					left: -128px
+					width: 144px
+	&__content
+		margin-top: 20px
+		display: flex
+		justify-content: space-between
+		+r(1023)
+			margin-top: 10px
+		+r(767)
+			margin-top: 0
+		+r(639)
+			flex-wrap: wrap
+	&__box
+		width: calc(50% - 15px)
+		+r(1219)
+			width: calc(50% - 10px)
+		+r(1023)
+			width: calc(50% - 5px)
+		+r(639)
+			width: 100%
+	&-box
+		&__ftitle
+			display: none
+			+r(639)
+				display: block
+				font-size: 22px
+				line-height: 1
+				font-weight: bold
+				color: #342c24
+				margin-bottom: 5px
+				margin-top: 15px
+				text-align: center
+		&__title
+			color: #342c24
+			font-family: "PT Sans"
+			font-size: 22px
+			font-weight: 400
+			line-height: 28px
+			padding-left: 31px
+			min-height: 84px
+			position: relative
+			margin-bottom: 28px
+			+r(1219)
+				font-size: 21px
+				line-height: 27px
+				margin-bottom: 23px
+			+r(1023)
+				font-size: 19px
+				line-height: normal
+				margin-bottom: 15px
+				padding-left: 20px
+				min-height: 97px
+			+r(767)
+				font-size: 17px
+				padding-left: 15px
+				min-height: 90px
+				br
+					display: none
+			+r(639)
+				min-height: auto
+				margin-bottom: 10px
+			&:before
+				content: ''
+				position: absolute
+				top: 2px
+				left: 0
+				width: 4px
+				height: 49px
+				background-color: #ffb400
+				+r(1023)
+					height: 68px
+				+r(767)
+					height: 64px
+				+r(639)
+					height: 90%
+					width: 3px
+		&__list
+			border-radius: 2px
+			background-color: #fff9ef
+			padding: 20px 60px 20px 34px
+			min-height: 204px
+			display: flex
+			flex-direction: column
+			justify-content: space-between
+			+r(1023)
+				padding: 15px
+				min-height: 160px
+			+r(767)
+				min-height: 170px
+			+r(639)
+				min-height: auto
+		&__item
+			line-height: 26px
+			color: #433938
+			font-family: $textFont
+			font-size: 20px
+			position: relative
+			padding-left: 32px
+			+r(1219)
+				padding-left: 25px
+				font-size: 19px
+			+r(1023)
+				padding-left: 20px
+				font-size: 17px
+				line-height: normal
+			+r(639)
+				&:not(:first-child)
+					margin-top: 5px
+			&:before
+				content: ''
+				position: absolute
+				top: 7px
+				left: 0
+				width: 12px
+				height: 12px
+				background-color: #ffb400
+				border-radius: 50%
+				+r(1023)
+					top: 5px
+		&__r
+			.composition-box__item:before, .composition-box__title:before
+				background-color: #342c24
+			.composition-box__title:before
+				height: 95%
+			.composition-box__list
+				justify-content: center
+			.composition-box__item:last-child
+				margin-top: 20px
+				+r(1023)
+					margin-top: 10px
+				+r(767)
+					margin-top: 5px
+
