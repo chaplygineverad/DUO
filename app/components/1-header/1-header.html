@@ -1,30 +1,98 @@
 <section class="header">
     <div class="container header__nav-container">
-    <div class="header__navigation">
-        <div class="header__nav-item -first">
-            <img src="./img/logo.png" alt="logo">
+        <div class="header__navigation">
+            <div class="header__nav-item -first">
+                <img src="./img/logo.png" alt="logo">
+            </div>
+            <div class="header__nav-item">
+                <div class="header__nav-link-box">
+                    <div class="header__link-image">
+                        <img src="./img/header-icon1.svg" alt="link">
+                    </div>
+                    <a href="" class="header__link">Отзывы</a>
+                </div>
+                <div class="header__nav-link-box">
+                    <div class="header__link-image">
+                        <img src="./img/header-icon2.svg" alt="link">
+                    </div>
+                    <a href="" class="header__link">Состав</a>
+                </div>
+                <div class="header__nav-link-box -call-box">
+                    <div class="header__link-image">
+                        <img src="./img/header-icon3.svg" alt="link">
+                    </div>
+                    <a href="" class="header__link">Заказать обратный звонок</a>
+                </div>
+            </div>
         </div>
-        <div class="header__nav-item">
-            <div class="header__nav-link-box">
-                <div class="header__link-image">
-                    <img src="./img/header-icon1.svg" alt="link">
-                </div>
-                <a href="" class="header__link">Отзывы</a>
-            </div>
-            <div class="header__nav-link-box">
-                <div class="header__link-image">
-                    <img src="./img/header-icon2.svg" alt="link">
-                </div>
-                <a href="" class="header__link">Состав</a>
-            </div>
-            <div class="header__nav-link-box -call-box">
-                <div class="header__link-image">
-                    <img src="./img/header-icon3.svg" alt="link">
-                </div>
-                <a href="" class="header__link">Заказать обратный звонок</a>
-            </div>
-        </div>
-    </div>
 
+    </div>
+    <div class="header__background">
+        <div class="container">
+            <h1 class="header__title title">Начните восстановление суставов с помощью антиоксиданта —
+                <span class="orange-fill">куркумина</span>
+            </h1>
+            <div class="header__items">
+                <div class="header__item-box -preferences">
+                    <p class="header__preference -fight">
+                        Борется с инфекцией
+                        и&nbsp;воспалением
+                    </p>
+                    <p class="header__preference -no-pain">
+                        Снимает ревматические
+                        и&nbsp;артритные боли
+                    </p>
+                    <p class="header__preference -mobility">
+                        Восстанавливает
+                        подвижность суставов
+                    </p>
+                </div>
+
+                <div class="header__item-box">
+                    <div class="header__prod-box">
+                        <img src="./img/product-pack.png" alt="product">
+                    </div>
+                </div>
+                <div class="header__item-box">
+                    <div class="order-form">
+                        <p class="order-form__title">Закажите сейчас по акции</p>
+                        <div class="order-form__price-row">
+                            <div class="order-form__price-block">
+                                <!--old-->
+                                <div class="order-form__price-box -old">
+                                    <span class="x_price_previous">999</span>
+                                    <span class="x_currency">руб</span>
+                                </div>
+                                <!--new-->
+                                <div class="order-form__price-box -new">
+                                    <span class="x_price_current">400</span>
+                                    <span class="x_currency">руб</span>
+                                </div>
+                            </div>
+                            <p class="order-form__sale">- 50
+                                <span>%</span>
+                            </p>
+                        </div>
+                        <p class="order-form__timer-title">До конца
+                            <span>Акции</span> осталось:
+                        </p>
+                            <div class="order-form__timer-box timer-box">
+                                <div class="hours"></div>
+                                <div class="minutes"></div>
+                                <div class="seconds"></div>
+                            </div>
+                        <form action="/submit" method="post" class="x_order_form order-form__body-form" >
+                            <label class="order-form__input-box">
+                                <input type="text" name="name" required placeholder="Ваше имя">
+                            </label>
+                            <label class="order-form__input-box">
+                                <input type="tel" name="phone" required placeholder="Ваш телефон">
+                            </label>
+                            <button type="submit" class="order-form__order-button btn">Заказать</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
