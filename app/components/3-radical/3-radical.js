@@ -14,31 +14,12 @@
     for (let i = 0; i < popups.length; i++) {
         popups[i].addEventListener('mouseover', function (event) {
             let content = popups[i].querySelector('.danger__show');
-            content.style.cssText = 'display: block;';
+            content.classList.add('fade');
         });
 
         popups[i].addEventListener('mouseout', function (event) {
             let content = popups[i].querySelector('.danger__show');
-            content.style.cssText = 'display: none;';
+            content.classList.remove('fade');
         });
     }
-}
-
-{
-    let arrows = document.querySelectorAll('.danger__arrow');
-
-    let i = 0;
-    function glowing(array){
-        for (let i = 0; i < array.length; i++) {
-            array[i].style.opacity = 0;
-        }
-        array[i].style.opacity = 1;
-        i++;
-        if (i == arrows.length) {
-            i = 0;
-        }
-        setTimeout(glowing(array), 1000);
-    }
-
-    glowing(arrows);
 }

@@ -360,9 +360,8 @@
         }
 
         &::before {
-            width: 40px;
-            height: 40px;
             background: #fe9c75;
+            animation: grow 1s linear infinite;
         }
 
         &::after {
@@ -374,12 +373,20 @@
         &_1 {
             left: 0;
             top: 232px;
+
+            &::before {
+                animation-delay: .5s;
+            }
         }
 
         &_2 {
             top: 0;
             left: 215px;
             font-weight: 700;
+            
+            &::before {
+                animation-delay: .2s;
+            }
         }
 
         &_3 {
@@ -404,6 +411,11 @@
         line-height: 1.3;
         font-size: 20px;
         display: none;
+
+        &.fade {
+            display: block;
+        }
+
         &::before {
             content: '';
             height: 0;
@@ -416,9 +428,11 @@
             left: 50%;
             transform: translateX(-50%);
         }
+
         &_2 {
             width: 220px;
             font-size: 24px;
+
             span {
                 font-size: 26px;
             }
@@ -432,16 +446,19 @@
         right: 50%;
         top: 50%;
         transform-origin: 100% 50%;
-        opacity: 0;
+
         &_1 {
             transform: rotate(31deg);
         }
+
         &_2 {
             transform: rotate(163deg);
         }
+
         &_3 {
             transform: rotate(277deg);
         }
+
         img {
             position: absolute;
             max-width: 20px;
@@ -451,3 +468,111 @@
     }
 }
 
+@keyframes grow {
+    0% {
+        width: 24px;
+        height: 24px;
+    }
+
+    50% {
+        width: 40px;
+        height: 40px;
+    }
+
+    100% {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+
+@media (max-width: 1219px) {
+    .radical {
+        padding-top: 60px;
+        &__info {
+            align-items: flex-start;
+            background: radial-gradient(#fdeff6 20%,transparent 50%);
+        }
+
+        &__info-img {
+            max-width: 550px;
+        }
+
+        &__right {
+            padding-top: 20px;
+            font-size: 20px;
+            h4 {
+                font-size: 24px;
+            }
+        }
+    }
+
+    .danger {
+        &__title {
+            font-size: 38px;
+            margin-top: 30px;
+        }
+
+        &__item {
+            width: 310px;
+            font-size: 18px;
+        }
+
+        &__list {
+            margin-top: 20px;
+        }
+
+        &__text {
+            padding-left: 40px;
+        }
+
+        &__icon {
+            font-size: 30px;
+
+            &::before {
+                width: 50px;
+                height: 50px;
+            }
+
+            &::after {
+                width: 35px;
+                height: 35px;
+            }
+        }
+
+        &__bottom {
+            flex-wrap: wrap;
+            align-items: flex-start;
+        }
+
+        &__farm {
+            width: 480px;
+        }
+
+        &__farm-title {
+            font-size: 30px;
+        }
+
+        &__descr {
+            margin-top: 20px;
+            font-size: 20px;
+        }
+
+        &__pain {
+            margin-right: 0;
+        }
+    }
+}
+
+@media (max-width: 1023px) {
+    .radical {
+        &__info {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__right {
+            display: flex;
+        }
+    }
+}
