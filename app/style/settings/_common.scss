@@ -6,7 +6,9 @@ body {
 	overflow-x: hidden;
 	color: #342c24;
 }
-
+html{
+	overflow-x: hidden;
+}
 img {
 	max-width: 100%;
 }
@@ -19,7 +21,7 @@ svg {
 	width: 1220px;
 	margin: 0 auto;
 	padding: 0 25px;
-	@include r(1209) {
+	@include r(1219) {
 		width: 1024px;
 	}
 	@include r(1023) {
@@ -38,15 +40,20 @@ svg {
 }
 
 .title {	
+	color: #342c24;
+	font-family: "PT Sans";
 	font-size: 60px;
 	font-weight: 700;
 	line-height: 1.3;
 	@include r(1209){
+	line-height: 1;
+	@include r(1219){
 		font-size: 42px;
 	}
 	@include r(1023){	
 		font-size: 36px;
 		line-height: 1.1;
+		text-align: center;
 	}
 	@include r(767){	
 		font-size: 32px;
@@ -59,7 +66,9 @@ svg {
 	}
 }
 
-.text-bold {
+$textFont: "PT Sans";
+
+.text-bold, b {
 	font-weight: 700;
 }
 
@@ -73,4 +82,59 @@ svg {
 .orange-fill {
 	color: #ffb400;
 	font-weight: 700;
+}
+
+.btn {
+	border: 1px solid #80ba4a;
+	background: linear-gradient(to bottom, #bbe938, #85d725);
+	font-size: 36px;
+	font-weight: 700;
+	color: #000;
+	cursor: pointer;
+	border-radius: 5px;
+	display: block;
+	width: 270px;
+	font-family: $textFont;
+	&:hover {
+		background: linear-gradient(to bottom, #85d725, #bbe938);
+	}
+}
+
+.body-icon{
+	position: relative;
+	width: 60px;
+	height: 60px;
+	border: 8px solid #ffdd8b;
+	background-color: #ff9c00;
+	box-sizing: border-box;
+	border-radius: 50%;
+	flex-shrink: 0;
+	img{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-33%, -60%);
+	}
+	@include r(1023){
+		width: 44px;
+		height: 44px;
+		border: 6px solid #ffdd8b;
+	}
+}
+.timer-box {
+		display: flex;
+		justify-content: space-between;
+		font-family: "digital-7-mono", sans-serif;
+		font-size: 36px;
+		div {
+			width: 70px;
+			height: 56px;
+			border-radius: 4px;
+			border: 1px solid #efe2d5;
+			background: url("./../img/timer-bg.png") center no-repeat,#FFFFFF;
+			padding-left: 9px;
+			letter-spacing: 3px;
+			font-size: 52px;
+			line-height: 54px;
+		}
 }

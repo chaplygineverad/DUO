@@ -1,0 +1,211 @@
+.kurkumin
+	&-triangle
+		position: relative
+		&:before
+			content: ''
+			position: absolute
+			top: -37px
+			left: 25px
+			width: 0
+			height: 0
+			border-style: solid
+			border-width: 37px 0 0 37px
+			border-color: transparent transparent transparent #fff9ef
+			+r(1023)
+				display: none
+	&-top
+		padding: 76px 0 93px
+		background-color: #fff9ef
+		+r(1219)
+			padding: 60px 0
+	&__list
+		margin-top: 58px
+		display: flex
+		justify-content: space-between
+		+r(1219)
+			margin-top: 30px
+		+r(1023)
+			margin-top: 20px
+			flex-wrap: wrap
+		+r(639)
+			margin-top: 15px
+		+r(479)
+			margin-top: 10px
+	&__item
+		width: calc(33.3% - 1.6%)
+		position: relative
+		display: flex
+		justify-content: space-between
+		+r(1023)
+			width: 100%
+			justify-content: flex-start
+			align-items: center
+			&:not(:last-child)
+				margin-bottom: 15px
+	&-item
+		&__text
+			color: #342c24
+			font-size: 22px
+			font-family: $textFont
+			line-height: 28px
+			border-bottom: 2px solid #ffb400
+			padding-bottom: 13px
+			position: relative
+			width: 100%
+			+r(1219)
+				font-size: 21px
+				line-height: 27px
+				padding-bottom: 10px
+			+r(1023)
+				font-size: 19px
+				line-height: normal
+				padding-bottom: 5px
+				width: 100%
+				br
+					display: none
+			+r(767)
+				font-size: 18px
+			+r(639)
+				font-size: 17px
+			+r(479)
+				font-size: 16px
+			&:before
+				content: ''
+				position: absolute
+				bottom: -3px
+				right: 26px
+				width: 18px
+				height: 4px
+				background-color: #fff9ef
+				background-image: radial-gradient(circle closest-corner at 50% 50%, #ffb400 13%, transparent 25%)
+		&__icon
+			margin-right: 40px
+			+r(1219)
+				margin-right: 20px
+			+r(1023)
+				margin-right: 15px
+	&-bottom
+		padding: 99px 0 86px
+		position: relative
+		z-index: 0
+		.title
+			+r(1023)
+			br
+				display: none
+		+r(1219)
+			padding: 60px 0
+		&:before
+			content: ''
+			position: absolute
+			bottom: 0
+			left: 50%
+			transform: translateX(-1.5%)
+			background: url(../img/kurcuim-bottom--bg.png) no-repeat center
+			width: 883px
+			height: 589px
+			z-index: -1
+			+r(1605)
+				width: 660px
+				background-size: contain
+			+r(1219)
+				width: 541px
+				height: 385px
+			+r(1023)
+				display: none
+	&__content
+		margin-top: 62px
+		padding-left: 30px
+		position: relative
+		&:before
+			content: ''
+			position: absolute
+			top: 3px
+			left: 0
+			width: 5px
+			height: 96%
+			background-color: #ffb400
+			+r(639)
+				width: 3px
+		+r(1219)
+			margin-top: 30px
+			padding-left: 20px
+		+r(1023)
+			margin-top: 20px
+			padding-left: 15px
+		+r(639)
+			margin-top: 15px
+		+r(479)
+			margin-top: 10px
+	&__box
+		display: flex
+		align-items: center
+		&:not(:last-child)
+			margin-bottom: 44px
+			+r(1219)
+				margin-bottom: 15px
+			+r(479)
+				margin-bottom: 10px
+	&-box
+		&__number
+			color: #342c24
+			font-size: 44px
+			font-weight: 700
+			line-height: 1
+			font-family: $textFont
+			max-width: 104px
+			width: 100%
+			margin-right: 40px
+			+r(1219)
+				margin-right: 10px
+				font-size: 40px
+			+r(1023)
+				font-size: 32px
+				max-width: 80px
+			+r(767)
+				font-size: 30px
+			+r(639)
+				font-size: 28px
+				max-width: 70px
+			+r(479)
+				font-size: 26px
+				max-width: 62px
+			span
+				font-size: 32px
+				+r(1219)
+					font-size: 28px
+				+r(1023)
+					font-size: 22px
+				+r(767)
+					font-size: 21px
+				+r(639)
+					font-size: 20px
+				+r(479)
+					font-size: 19px
+		&__text
+			border-radius: 4px
+			background-color: #fbe2bb
+			min-height: 35px
+			color: #342c24
+			font-family: $textFont
+			font-size: 22px
+			font-weight: 400
+			line-height: 26px
+			padding: 4px 10px 6px
+			height: 100%
+			max-width: 430px
+			box-sizing: border-box
+			+r(1219)
+				font-size: 20px
+				line-height: 24px
+				max-width: 405px
+			+r(1023)
+				font-size: 18px
+				line-height: normal
+				max-width: 100%
+				letter-spacing: -0.5px
+				br
+					display: none
+			+r(639)
+				font-size: 17px
+			+r(479)
+				font-size: 16px
