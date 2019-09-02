@@ -1,15 +1,15 @@
 {
-    let linksPopup = document.querySelectorAll('.ever-popup-btn');
+	let linksPopup = document.querySelectorAll('.ever-popup-btn');
 
-    for (let i = 0; i < linksPopup.length; i++) {
-        linksPopup[i].addEventListener('click', function (event) {
-            event.preventDefault();
-        })
-    }
+	for (let i = 0; i < linksPopup.length; i++) {
+			linksPopup[i].addEventListener('click', function (event) {
+					event.preventDefault();
+			})
+	}
 }
 
 {
-    let popups = document.querySelectorAll('.danger__var');
+	let popups = document.querySelectorAll('.danger__var');
 
     for (let i = 0; i < popups.length; i++) {
         popups[i].addEventListener('mouseover', function (event) {
@@ -22,4 +22,6 @@
             content.classList.remove('fade');
         });
     }
+
 }
+
