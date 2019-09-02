@@ -1,0 +1,120 @@
+.delivery
+	padding: 62px 0 83px
+	+r(1219)
+		padding: 30px 0 60px
+	+r(1023)
+		padding-top: 20px !important
+	+r(767)
+		padding-top: 15px !important
+	+r(639)
+		padding-top: 0px !important
+	&__content
+		margin-top: 88px
+		display: flex
+		justify-content: space-between
+		position: relative
+		+r(1219)
+			margin-top: 70px
+		+r(1023)
+			margin-top: 60px
+		+r(767)
+			flex-wrap: wrap
+			margin-top: 20px
+			justify-content: center
+		+r(639)
+			margin-top: 15px
+		&:before
+			content: ''
+			position: absolute
+			top: 50%
+			left: 50%
+			transform: translate(-50%, -50%)
+			width: 507px
+			height: 1px
+			background-color: #e9e1f4
+			+r(767)
+				width: 1px
+				height: 200px
+	&__box
+		width: calc(33.3% - 1.6%)
+		box-shadow: 0 8px 29px rgba(223, 223, 223, 0.75)
+		border-radius: 8px
+		background-color: #ffffff
+		height: auto
+		padding: 60px 40px 23px
+		position: relative
+		+r(1219)
+			padding: 50px 25px 20px
+		+r(1023)
+			padding: 45px 8px 20px
+			width: calc(33.3% - 1%)
+		+r(767)
+			max-width: 525px
+			width: 100%
+			padding: 15px 15px 15px 70px
+		&:before
+			content: ''
+			position: absolute
+			top: -35px
+			left: 50%
+			transform: translateX(-50%)
+			width: 70px
+			height: 70px
+			box-shadow: 0 3px 13px rgba(229, 216, 203, 0.55)
+			border: 1px solid #d6d6d6
+			background-color: #ffffff
+			border-radius: 50%
+			+r(767)
+				top: 12px
+				left: 10px
+				transform: translateX(0)
+				width: 50px
+				height: 50px
+				background-size: 34px !important
+		&:not(:last-child)
+			+r(767)
+				margin-bottom: 10px
+	&__title
+		color: #292929
+		font-family: "PT Sans"
+		font-size: 24px
+		font-weight: 700
+		text-align: center
+		+r(1219)
+			font-size: 23px
+		+r(1023)
+			font-size: 21px
+			line-height: 21px
+		+r(767)
+			text-align: left
+		+r(639)
+			font-size: 20px
+			line-height: 20px
+	&__subtitle
+		color: #2b3035
+		font-family: "PT Sans"
+		font-size: 20px
+		font-weight: 400
+		line-height: 26px
+		text-align: center
+		margin-top: 5px
+		+r(1219)
+			font-size: 19px
+			line-height: 23px
+		+r(1023)
+			font-size: 17px
+			line-height: 19px
+		+r(767)
+			text-align: left
+		+r(639)
+			font-size: 16px
+			line-height: 18px
+	&--img1
+		&:before
+			background: url(../img/delivery-icon1.png) no-repeat center #fff
+	&--img2
+		&:before
+			background: url(../img/delivery-icon2.png) no-repeat center #fff
+	&--img3
+		&:before
+			background: url(../img/delivery-icon3.png) no-repeat center #fff
