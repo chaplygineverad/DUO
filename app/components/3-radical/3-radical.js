@@ -11,15 +11,15 @@
 {
 	let popups = document.querySelectorAll('.danger__var');
 
-	for (let i = 0; i < popups.length; i++) {
-			popups[i].addEventListener('mouseover', function (event) {
-					let content = popups[i].querySelector('.danger__show');
-					content.classList.add('fade');
-			});
+    for (let i = 0; i < popups.length; i++) {
+        popups[i].addEventListener('mouseover', function (event) {
+            let content = popups[i].querySelector('.danger__show');
+            content.classList.add('fade');
+        });
 
-			popups[i].addEventListener('mouseout', function (event) {
-					let content = popups[i].querySelector('.danger__show');
-					content.classList.remove('fade');
-			});
-	}
+        popups[i].addEventListener('mouseout', function (event) {
+            let content = popups[i].querySelector('.danger__show');
+            content.classList.remove('fade');
+        });
+    }
 }
