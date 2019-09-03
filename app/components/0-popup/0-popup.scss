@@ -1,0 +1,109 @@
+.simple-popup {
+  display: flex !important;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 900px;
+  padding: 44px 22px;
+  box-shadow: 0 12px 34px rgba(146, 138, 151, 0.36);
+  border-radius: 0 0 2px 2px;
+  background-color: #ffffff;
+  &__title {
+    width: 100%;
+    margin-bottom: 31px;
+    text-align: left;
+    color: #342c24;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 34px;
+  }
+  &__order-form {
+    display: block;
+    width: 100%;
+    max-width: 271px;
+  }
+  &__timer-title {
+    border-top: none !important;
+    padding-top: 10px !important;
+  }
+  &__price-block {
+    display: flex !important;
+    justify-content: flex-start;
+    width: 100%;
+    max-width: 270px !important;
+  }
+  //background-color: #342c24;
+  &__price-box {
+    margin-right: 26px;
+    &:after {
+      display: block !important;
+      position: absolute;
+      content: "";
+      width: 41px !important;
+      height: 1px;
+      background: #c5b9ad;
+      bottom: unset !important;
+      top: 17px;
+      left: unset !important;
+      right: -32px;
+      transform: rotate(90deg);
+    }
+  }
+  &__prod-box {
+    display: block;
+    position: relative;
+    width: 100%;
+    max-width: 516px;
+    margin-top: 28px;
+    &:after {
+      display: block;
+      position: absolute;
+      z-index: 3;
+      content: "";
+      width: 288px;
+      height: 141px;
+      bottom: -33px;
+      left: 87px;
+      background: url(./../img/product-capsule.png) no-repeat;
+    }
+  }
+}
+
+.ever-popup {
+  background: rgba(253, 237, 221, 0.9) !important;
+}
+.ever-popup__close {
+  width: 13px !important;
+  height: 13px !important;
+  position: absolute;
+  cursor: pointer;
+  top: 50px !important;
+  right: 18px !important;
+  z-index: 1;
+}
+.ever-popup__close:after, .ever-popup__close:before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 5px!important;
+  width: 16px!important;
+  height: 2px!important;
+  background: #909090 !important;
+  transition: all 1s;
+}
+
+
+@media all and (max-width: 1023px){
+  .simple-popup {
+    max-width: 290px;
+    padding: 10px;
+    &__title {
+      margin-bottom: 0;
+      font-size: 21px;
+      line-height: 22px;
+    }
+    &__prod-box {
+      display: none;
+    }
+  }
+}

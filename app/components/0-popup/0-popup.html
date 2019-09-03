@@ -1,0 +1,44 @@
+<div class="ever-popup-build">
+    <div class="simple-popup" id="cloneThis">
+        <p class="simple-popup__title">Закажите сейчас по&nbsp;акции</p>
+        <!--1-->
+        <div class="simple-popup__order-form order-form">
+            <div class="order-form__price-row">
+                <div class="order-form__price-block simple-popup__price-block">
+                    <!--old-->
+                    <div class="simple-popup__price-box order-form__price-box -old">
+                        <span class="x_price_previous">999</span>
+                        <span class="x_currency">руб</span>.
+                    </div>
+                    <!--new-->
+                    <div class="order-form__price-box -new">
+                        <span class="x_price_current">400</span>
+                        <span class="x_currency">руб</span>.*
+                    </div>
+                </div>
+            </div>
+            <p class="order-form__timer-title simple-popup__timer-title">До конца
+                <span>Акции</span> осталось:
+            </p>
+            <div class="order-form__timer-box timer-box">
+                <div class="hours"></div>
+                <div class="minutes"></div>
+                <div class="seconds"></div>
+            </div>
+            <form action="/submit" method="post" class="x_order_form order-form__body-form" >
+                <label class="order-form__input-box">
+                    <input type="text" name="name" required placeholder="Ваше имя">
+                </label>
+                <label class="order-form__input-box">
+                    <input type="tel" name="phone" required placeholder="Ваш телефон">
+                </label>
+                <button type="submit" class="order-form__order-button btn">Заказать</button>
+                <p class="order-form__rules">* при заказе курса</p>
+            </form>
+        </div>
+        <!--2-->
+            <div class="simple-popup__prod-box ">
+                <img src="./img/product-pack.png" alt="product">
+            </div>
+    </div>
+</div>
