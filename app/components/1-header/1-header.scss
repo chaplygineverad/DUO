@@ -104,7 +104,7 @@
     background: linear-gradient(90deg, #fbf7f3 59.8%, #f7ebdf 40.2%);
   }
   &__title {
-    max-width: 751px;
+    max-width: 740px;
     font-size: 60px;
     font-weight: 700;
     line-height: 1;
@@ -451,7 +451,7 @@
     }
     &__prod-box {
       &:before {
-        bottom: -57px;
+        bottom: -23px;
         left: -8px;
       }
       &:after {
@@ -460,11 +460,22 @@
       }
     }
   }
-  .order-form__title {
-    font-size: 33px;
+  .order-form {
+    &__title {
+      font-size: 33px;
+    }
+    &__timer-title {
+      margin-bottom: 10px;
+      padding-top: 10px;
+    }
+    &__input-box {
+      margin-top: 10px;
+    }
+    &__order-button {
+      margin-top: 12px;
+    }
   }
 }
-
 @media all and (max-width: 767px) {
   .header {
     &__navigation {
@@ -493,6 +504,9 @@
     &__prod-box {
       max-width: 330px;
       margin-top: 113px;
+      &:before {
+        display: none;
+      }
     }
   }
   .order-form {
@@ -513,16 +527,7 @@
       top: 9px;
       right: 20px;
     }
-    &__timer-title {
-      margin-bottom: 10px;
-      padding-top: 10px;
-    }
-    &__input-box {
-      margin-top: 10px;
-    }
-    &__order-button {
-      margin-top: 12px;
-    }
+
   }
 }
 @media all and (max-width: 639px) {
@@ -537,7 +542,7 @@
       max-width: 102px;
     }
     &__link {
-      font-size: 16px;
+      font-size: 15px;
     }
     &__link-image {
       width: 30px;
@@ -549,7 +554,7 @@
     }
     &__item-box {
       &.-form {
-        margin: 74px auto 0;
+        margin: 50px auto 0;
       }
       &.-preferences {
         margin-top: 74px;

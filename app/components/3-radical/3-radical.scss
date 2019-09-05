@@ -206,7 +206,7 @@
     &__info {
         display: flex;
         margin-top: 44px;
-        background: radial-gradient(#fdeff6 50%, transparent 80%);
+        background: radial-gradient(#fdeff6 50%, transparent 71%);
     }
 
     &__right {
@@ -297,21 +297,24 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        margin-top: 60px;
+        margin-top: 55px;
     }
 
     &__item {
         display: flex;
-        font-size: 20px;
+        font-size: 19px;
         width: 370px;
         padding-left: 24px;
-        padding-right: 5px;
+        padding-right: 0;
     }
 
     &__text {
         padding-left: 65px;
-        line-height: 1.4;
+        line-height: 1.7;
         padding-top: 5px;
+        b {
+            letter-spacing: -0.03em;
+        }
     }
 
     &__farm-title {
@@ -334,7 +337,7 @@
     &__bottom {
         display: flex;
         justify-content: space-between;
-        margin-top: 56px;
+        margin-top: 78px;
     }
 
     &__pain {
@@ -486,6 +489,36 @@
     }
 }
 
+@media all and (-ms-high-contrast: none) {
+    .effect__text {
+        font-family: "PT-Sans", sans-serif;
+        letter-spacing: -0.06em;
+    }
+    .effect__btn {
+        font-family: "PT-Sans", sans-serif;
+        letter-spacing: -0.09em;
+    }
+    .danger__icon::after {
+        top: 16px;
+        left: 8px;
+    }
+    .danger__icon {
+        padding-top: 18px;
+        padding-left: 23px;
+    }
+    .danger__icon::before {
+        width: 59px;
+        height: 59px;
+        background: #ff9d76;
+        top: 8px;
+        left: 0;
+    }
+    .danger__pain {
+        margin-top: -20px;
+    }
+
+
+}
 
 @media (max-width: 1219px) {
     .radical {
@@ -583,9 +616,16 @@
         }
 
         &__free {
+            width: 100%;
+            max-width: 574px;
+            margin: 0 auto;
             padding-left: 0;
             width: 100%;
             padding: 0 22px;
+            text-align: center;
+            h4, p {
+                display: inline;
+            }
         }
 
         &__free-text {
@@ -652,6 +692,9 @@
     .danger {
         &__title {
             font-size: 26px;
+            text-align: center;
+            max-width: 300px;
+            margin: 20px auto 0;
         }
 
         &__icon {

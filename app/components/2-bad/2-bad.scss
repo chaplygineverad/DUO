@@ -3,8 +3,10 @@
     padding-bottom: 123px;
 
     .title {
+        max-width: 1024px;
+        margin: 0 auto;
         text-align: center;
-        letter-spacing: -.06em;
+        letter-spacing: -.02em;
         line-height: 1.0;
     }
 
@@ -135,7 +137,7 @@
             border-color: transparent transparent #fff transparent;
             border-style: solid;
             position: absolute;
-            top: -15px;
+            top: -14px;
             left: 50%;
             transform: translateX(-50%);
             display: block;
