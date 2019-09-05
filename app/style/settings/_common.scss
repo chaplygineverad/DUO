@@ -1,138 +1,142 @@
 // $mainColor: #000
 
-body {	
-	font-family: 'PT-Sans', sans-serif;
-	font-size: 14px;
-	overflow-x: hidden;
-	color: #342c24;
+body {
+  font-family: "PT-Sans", sans-serif;
+  font-size: 14px;
+  overflow-x: hidden;
+  color: #342c24;
 }
-html{
-	overflow-x: hidden;
+html {
+  overflow-x: hidden;
 }
 img {
-	max-width: 100%;
+  max-width: 100%;
 }
 
 svg {
-	overflow: hidden;
+  overflow: hidden;
 }
-
+br {
+  line-height: 1;
+}
 .container {
-	width: 1220px;
-	margin: 0 auto;
-	padding: 0 25px;
-	@include r(1219) {
-		width: 1024px;
-	}
-	@include r(1023) {
-		width: 768px;
-		padding: 0 10px;
-	}
-	@include r(767) {
-		width: 640px;
-	}
-	@include r(639) {
-		width: 480px;
-	}
-	@include r(479) {
-		width: 100%;
-	}
+  width: 1220px;
+  margin: 0 auto;
+  padding: 0 25px;
+  @include r(1219) {
+    width: 1024px;
+  }
+  @include r(1023) {
+    width: 768px;
+    padding: 0 10px;
+  }
+  @include r(767) {
+    width: 640px;
+  }
+  @include r(639) {
+    width: 480px;
+  }
+  @include r(479) {
+    width: 100%;
+  }
 }
 
-.title {	
-	color: #342c24;
-	font-family: "PT Sans";
-	font-size: 60px;
-	font-weight: 700;
-	line-height: 1;
-	@include r(1219){
-		font-size: 42px;
-	}
-	@include r(1023){	
-		font-size: 36px;
-		text-align: center;
-	}
-	@include r(767){	
-		font-size: 32px;
-	}
-	@include r(639){	
-		font-size: 29px;
-	}
-	@include r(479){	
-		font-size: 26px;
-	}
+.title {
+  color: #342c24;
+  font-family: "PT Sans";
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 1;
+  @include r(1219) {
+    font-size: 42px;
+  }
+  @include r(1023) {
+    font-size: 36px;
+    text-align: center;
+  }
+  @include r(767) {
+    font-size: 32px;
+  }
+  @include r(639) {
+    font-size: 29px;
+  }
+  @include r(479) {
+    font-size: 26px;
+  }
 }
 
 $textFont: "PT Sans";
 
-.text-bold, b {
-	font-weight: 700;
+.text-bold,
+b {
+  font-weight: 700;
 }
 
 .text-black {
-	font-weight: 900;
+  font-weight: 900;
 }
 
 .text-nowrap {
-	white-space: nowrap;
+  white-space: nowrap;
 }
 .orange-fill {
-	color: #ffb400;
-	font-weight: 700;
+  color: #ffb400;
+  font-weight: 700;
 }
 
 .btn {
-	border: 1px solid #80ba4a;
-	background: linear-gradient(to bottom, #bbe938, #85d725);
-	font-size: 36px;
-	font-weight: 700;
-	color: #000;
-	cursor: pointer;
-	border-radius: 5px;
-	display: block;
-	width: 270px;
-	font-family: $textFont;
-	box-shadow: 0px 11px 20px -6px rgba(102, 165, 39, 0.71);
-&:hover {
-		background: linear-gradient(to bottom, #85d725, #bbe938);
-	}
+  border: 1px solid #80ba4a;
+  background: linear-gradient(to bottom, #bbe938, #85d725);
+  font-size: 36px;
+  font-weight: 700;
+  color: #000;
+  cursor: pointer;
+  border-radius: 5px;
+  display: block;
+  width: 270px;
+  font-family: $textFont;
+  box-shadow: 0px 11px 20px -6px rgba(102, 165, 39, 0.71);
+  &:hover {
+    background: linear-gradient(to bottom, #85d725, #bbe938);
+  }
 }
 
-.body-icon{
-	position: relative;
-	width: 60px;
-	height: 60px;
-	border: 8px solid #ffdd8b;
-	background-color: #ff9c00;
-	box-sizing: border-box;
-	border-radius: 50%;
-	flex-shrink: 0;
-	img{
-		position: absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-33%, -60%);
-	}
-	@include r(1023){
-		width: 44px;
-		height: 44px;
-		border: 6px solid #ffdd8b;
-	}
+.body-icon {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  border: 8px solid #ffdd8b;
+  background-color: #ff9c00;
+  box-sizing: border-box;
+  border-radius: 50%;
+  flex-shrink: 0;
+  background-clip: padding-box;
+  img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-33%, -60%);
+  }
+  @include r(1023) {
+    width: 44px;
+    height: 44px;
+    border: 6px solid #ffdd8b;
+  }
 }
 .timer-box {
-		display: flex;
-		justify-content: space-between;
-		font-family: "digital-7-mono", sans-serif;
-		font-size: 36px;
-		div {
-			width: 70px;
-			height: 56px;
-			border-radius: 4px;
-			border: 1px solid #efe2d5;
-			background: url("./../img/timer-bg.png") center no-repeat,#FFFFFF;
-			padding-left: 9px;
-			letter-spacing: 3px;
-			font-size: 52px;
-			line-height: 54px;
-		}
+  display: flex;
+  justify-content: space-between;
+  font-family: "digital-7-mono", sans-serif;
+  font-size: 36px;
+  div {
+    width: 70px;
+    height: 56px;
+    border-radius: 4px;
+    border: 1px solid #efe2d5;
+    background: url("./../img/timer-bg.png") center no-repeat, #ffffff;
+    padding-left: 9px;
+    letter-spacing: 3px;
+    font-size: 52px;
+    line-height: 54px;
+  }
 }

@@ -78,6 +78,7 @@
 	&__text
 		margin-left: 35px
 		margin-top: 30px
+		width: 100%
 		+r(1219)
 			margin-left: 15px
 			margin-top: 10px
@@ -168,9 +169,14 @@
 		width: 100%
 		+r(1219)
 			margin-top: 30px
+			display: block
+			margin-right: auto
+			margin-left: auto
 		+r(1023)
 			margin-top: 15px
 			padding: 10px 0
+			margin-left: 0
+			margin-right: 0
 		+r(639)
 			margin-right: auto
 			margin-left: auto
@@ -322,6 +328,7 @@
 			span
 				right: -30px
 				color: #ffb400
+				text-shadow: 1px 1px 2px #342c24;
 				+r(1219)
 					right: -25px
 				+r(1023)
@@ -439,13 +446,17 @@
 			display: flex
 			flex-direction: column
 			justify-content: space-between
+			height: 204px
 			+r(1023)
 				padding: 15px
 				min-height: 160px
+				height: 160px
 			+r(767)
 				min-height: 170px
+				height: 170px
 			+r(639)
 				min-height: auto
+				height: auto
 		&__item
 			line-height: 26px
 			color: #433938
@@ -481,6 +492,7 @@
 				height: 95%
 			.composition-box__list
 				justify-content: center
+				background-color: #ededed;
 			.composition-box__item:last-child
 				margin-top: 20px
 				+r(1023)
